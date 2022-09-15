@@ -1,15 +1,8 @@
 // Detectar si nuestra página se esta ejecutando en primer o segundo plano...
-
-
-
-document.addEventListener('visibilitychange', e => {
-    console.log(document.visibilityState)
-
+document.addEventListener('visibilitychange', () => {
     if(document.visibilityState === 'visible') {
-        console.log('Función para reproducir el video....' )
+        console.log('Ejecutar la función para reproducir el video')
     } else {
-        console.log('Pausando el video...')
+        console.log('Pausar el video')
     }
 })
-
-// Existen muchas API's nuevas, la de geolocalización no es tan nueva y es de las más populares, también Fetch API que estaremos viendo en el siguiente capítulo
